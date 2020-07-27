@@ -21,6 +21,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Testing ",
+    "githubUrl": "https://github.com/Imstupidpleasehelp/Reactnative-marketplace-app"
   }
 }

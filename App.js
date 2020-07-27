@@ -7,7 +7,7 @@ export default function App() {
   console.log('It worked')
   return (
     <View style={styles.container}>
-      <Text style={styles.whitetext}>Nwwwe
+      <Text style={styles.whitetext}>We are published!
 
       </Text>
       <StatusBar style="auto" />
