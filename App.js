@@ -2,6 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import React from "react";
 import {
   StyleSheet,
+  Dimensions,
   Text,
   View,
   SafeAreaView,
@@ -10,36 +11,25 @@ import {
   TouchableOpacity,
   TouchableHighlight,
   Button,
-  Alert
+  Alert,
 } from "react-native";
+import {useDimensions,  useDeviceOrientation} from '@react-native-community/hooks' /* use this to support orientations */ 
 //use safearea to make sure it's not covered
+
+
+
+
 export default function App() {
   //shake the phone for dev menu
-  const HandlePress = () => alert('AAAA');
+ const {landscape} = useDeviceOrientation()
   return (
-    
-    
-    <SafeAreaView style={styles.container}><Text style={styles.title}>Meme dictionary</Text>
-      {/*local image <Image styles={styles.image} source={require("./assets/download.png")} />*/}
-      <Text style={styles.whitetext}>DOGE </Text>
-      <View >
-        <Image
-          style={styles.image}
-          source={{
-            width: 200,
-            height: 300,
-            uri:
-              "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi0.kym-cdn.com%2Fphotos%2Fimages%2Foriginal%2F000%2F640%2F866%2Fe59.png&f=1&nofb=1",
-          }}
-        />
-        {/* alerts */}
-        <Button title="click meh" onPress={() => Alert.alert('Do you', 'yes', [
-          {text: 'yes'},
-          {text: 'nah', onPress:HandlePress}
-        ])}  />
+    <SafeAreaView style={styles.container}>
+      <Text style={{color: landscape ? 'green' : 'black',}}>Meme dictionary</Text>
+<View style={styles.box}><Text style={styles.whitetext}>REDaX</Text></View>
+{/* handling rotation */}
+      <View>
       </View>
     </SafeAreaView>
-    
   );
 }
 
@@ -48,15 +38,15 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "gold",
     justifyContent: "center",
-    alignItems: "center",
-  
+    
   },
   title: {
-justifyContent: "space-around",
-fontSize: 48,
-paddingLeft: 5,
-paddingRight: 5,
-backgroundColor: 'orange',
+    justifyContent: "space-around",
+    fontSize: 48,
+    paddingLeft: 5,
+    paddingRight: 5,
+    backgroundColor: "orange",
+    
   },
   whitetext: {
     color: "black",
@@ -66,4 +56,31 @@ backgroundColor: 'orange',
     justifyContent: "center",
     alignItems: "center",
   },
+  box: {
+backgroundColor: 'red',
+height: '50%',
+width: '60%',
+  },
 });
+
+{
+  /*local image <Image styles={styles.image} source={require("./assets/download.png")} />*/
+}
+{
+  /* alerts 
+  <Button title="click meh" onPress={() => Alert.alert('Do you', 'yes', [
+    {text: 'yes'},
+    {text: 'nah', onPress:HandlePress}
+  ])}  />*/
+}
+
+{/* web inmages <Image
+  style={styles.image}
+  source={{
+    width: 200,
+    height: 300,
+    uri:
+      "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi0.kym-cdn.com%2Fphotos%2Fimages%2Foriginal%2F000%2F640%2F866%2Fe59.png&f=1&nofb=1",
+  }}
+/>
+*/}
