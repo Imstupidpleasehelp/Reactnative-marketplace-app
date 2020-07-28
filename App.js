@@ -25,11 +25,11 @@ export default function App() {
     landscape,
   } = useDeviceOrientation(); /* change with orientation  <Text style={{color: landscape ? 'green' : 'black',}}>Meme dictionary</Text> */
   return (
-    <SafeAreaView style={{ backgroundColor: "blue", flex: 1, flexDirection: "row", paddingTop: 50, justifyContent: 'center', alignItems: "center" }}>
-      <View style={{ backgroundColor: "green", height: 100, width: 100 }} />
-      <View style={{ backgroundColor: "red", height: 100, width: 100 }} />
-      <View style={{ backgroundColor: "tomato", height: 100, width: 100 }} />
-      <View style={{ backgroundColor: "gold", height: 100, width: 100 }} />
+    <SafeAreaView style={{ backgroundColor: "white", flex: 1,  }}>
+      <TouchableOpacity style={{ backgroundColor: "green", flex: 1 }} />
+      <TouchableOpacity style={{ backgroundColor: "red", flex: 1 }} />
+      <TouchableOpacity style={{ backgroundColor: "tomato", flex: 1 }} />
+      <TouchableOpacity style={{ backgroundColor: "gold", flex: 1 }} />
       
     </SafeAreaView >
   );
