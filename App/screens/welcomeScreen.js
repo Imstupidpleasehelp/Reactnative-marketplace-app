@@ -1,18 +1,18 @@
 import React from 'react';
-import { StyleSheet, Text, View, ImageBackground, Image } from 'react-native';
+import { StyleSheet, Text, View, ImageBackground, Image, Button } from 'react-native';
 
 const WelcomeScreen = () => {
   return (
     <ImageBackground
       style={styles.background}
-      source={require('../assets/download.png')}
+      source={require('../assets/doge.jpg')}
     >
       <View style={styles.logoContainer}>
-        <Image style={styles.logo} source={require('../assets/doge.jpg')} />
+        <Image style={styles.logo} source={require('../assets/download.png')} />
         <Text>Sell What You Don't Need</Text>
       </View>
-      <View style={styles.loginButton} />
-      <View style={styles.registerButton} />
+      <View style={styles.loginButton}><Text style={styles.big}>LOLOLOL</Text></View>
+      <View style={styles.registerButton}><Text style={styles.big}>WEWOWOWOw</Text></View>
     </ImageBackground>
   );
 };
@@ -33,6 +33,12 @@ const styles = StyleSheet.create({
   logo: {
     width: 100,
     height: 100
+  },
+  big: {
+      fontSize: 48,
+      justifyContent: 'center',
+      color: 'white',
+      alignItems: 'center'
   },
   logoContainer: {
     top: 70,

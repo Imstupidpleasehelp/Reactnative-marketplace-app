@@ -13,10 +13,11 @@ import {
   Button,
   Alert,
 } from "react-native";
+/*
 import {
   useDimensions,
   useDeviceOrientation,
-} from "@react-native-community/hooks"; /* use this to support orientations */
+} from "@react-native-community/hooks";  use this to support orientations */
 import WelcomeScreen from "./App/screens/welcomeScreen";
 //use safearea to make sure it's not covered
 
@@ -26,10 +27,9 @@ export default function App() {
     landscape,
   } = useDeviceOrientation(); /* change with orientation  <Text style={{color: landscape ? 'green' : 'black',}}>Meme dictionary</Text> */
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
       <WelcomeScreen />
-      
-    </SafeAreaView >
+    </SafeAreaView>
   );
 }
 
@@ -37,8 +37,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "gold",
-    
-    
   },
   title: {
     justifyContent: "space-around",
