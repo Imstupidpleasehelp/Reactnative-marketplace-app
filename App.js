@@ -13,6 +13,7 @@ import {
   Button,
   Alert,
 } from "react-native";
+import colors from './App/config/colors'
 /*
 import {
   useDimensions,
@@ -31,7 +32,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <WelcomeScreen />
-      <AppButton title={'login'} onPress={() => console.log('you')} />
+      
     </SafeAreaView>
   );
 }
@@ -43,6 +44,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
+  
   
 });
 
