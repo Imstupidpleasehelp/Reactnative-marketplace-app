@@ -17,6 +17,7 @@ import {
   useDimensions,
   useDeviceOrientation,
 } from "@react-native-community/hooks"; /* use this to support orientations */
+import WelcomeScreen from "./App/screens/welcomeScreen";
 //use safearea to make sure it's not covered
 
 export default function App() {
@@ -25,11 +26,8 @@ export default function App() {
     landscape,
   } = useDeviceOrientation(); /* change with orientation  <Text style={{color: landscape ? 'green' : 'black',}}>Meme dictionary</Text> */
   return (
-    <SafeAreaView style={{ backgroundColor: "white", flex: 1,  }}>
-      <TouchableOpacity style={{ backgroundColor: "green", flex: 1 }} />
-      <TouchableOpacity style={{ backgroundColor: "red", flex: 1 }} />
-      <TouchableOpacity style={{ backgroundColor: "tomato", flex: 1 }} />
-      <TouchableOpacity style={{ backgroundColor: "gold", flex: 1 }} />
+    <SafeAreaView>
+      <WelcomeScreen />
       
     </SafeAreaView >
   );
@@ -39,9 +37,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "gold",
-    justifyContent: "center",
-    alignItems: "center",
-    padding: 10,
+    
+    
   },
   title: {
     justifyContent: "space-around",

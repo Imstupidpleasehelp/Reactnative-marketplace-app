@@ -4,9 +4,9 @@
     "slug": "marketapp",
     "version": "1.0.0",
     "orientation": "default",
-    "icon": "./assets/icon.png",
+    "icon": "./App/assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./App/assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
