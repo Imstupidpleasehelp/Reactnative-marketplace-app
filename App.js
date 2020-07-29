@@ -20,6 +20,7 @@ import {
 } from "@react-native-community/hooks";  use this to support orientations */
 import WelcomeScreen from "./App/screens/welcomeScreen";
 import ViewImageScreen from "./App/screens/viewimage";
+import AppButton from "./App/components/appbutton";
 //use safearea to make sure it's not covered
 
 export default function App() {
@@ -29,7 +30,7 @@ export default function App() {
   } = useDeviceOrientation(); /* change with orientation  <Text style={{color: landscape ? 'green' : 'black',}}>Meme dictionary</Text> */
   return (
     <SafeAreaView style={styles.container}>
-      <ViewImageScreen />
+      <AppButton title={'login'} onPress={() => console.log('you')} />
     </SafeAreaView>
   );
 }
@@ -37,28 +38,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "gold",
+    backgroundColor: "black",
+    justifyContent: 'center',
+    alignItems: 'center'
   },
-  title: {
-    justifyContent: "space-around",
-    fontSize: 48,
-    paddingLeft: 5,
-    paddingRight: 5,
-    backgroundColor: "orange",
-  },
-  whitetext: {
-    color: "black",
-    fontSize: 45,
-  },
-  image: {
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  box: {
-    backgroundColor: "red",
-    height: "50%",
-    width: "60%",
-  },
+  
 });
 
 {
