@@ -30,6 +30,7 @@ export default function App() {
   } = useDeviceOrientation(); /* change with orientation  <Text style={{color: landscape ? 'green' : 'black',}}>Meme dictionary</Text> */
   return (
     <SafeAreaView style={styles.container}>
+      <WelcomeScreen />
       <AppButton title={'login'} onPress={() => console.log('you')} />
     </SafeAreaView>
   );
