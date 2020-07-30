@@ -2,7 +2,7 @@ import React from 'react';
 import  {View, Image, StyleSheet} from 'react-native'
 import colors from '../config/colors'
 import AppButton from '../components/appbutton';
-function ViewImageScreen(props) {
+const ViewImageScreen = () =>  {
     return (
         <View style={styles.Container}>
             <View style={styles.closeButton}></View>

@@ -8,10 +8,10 @@ import {
   Button,
   Card,
 } from "react-native";
-function CardCom() {
+const CardCom = () => {
   return (
     <View>
-      <Card title={"weee"} price={100}></Card>
+     <Text>aweaewe</Text>
     </View>
   );
 }

@@ -6,6 +6,7 @@ import {
   Text,
   View,
   SafeAreaView,
+  Card,
   Image,
   TouchableWithoutFeedback,
   TouchableOpacity,
@@ -24,7 +25,7 @@ import ViewImageScreen from "./App/screens/viewimage";
 import CardCom from './App/components/card'
 //use safearea to make sure it's not covered
 
-export default function App() {
+const App = () => {
   //shake the phone for dev menu
   /* const {
     landscape,
@@ -32,11 +33,12 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
     <WelcomeScreen /> 
-      <CardCom />
-      
+    <ViewImageScreen />
+    <CardCom />
     </SafeAreaView>
   );
 }
+export default App
 
 const styles = StyleSheet.create({
   container: {

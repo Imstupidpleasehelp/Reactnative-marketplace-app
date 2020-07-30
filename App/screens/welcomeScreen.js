@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import AppButton from "../components/appbutton";
 
-function WelcomeScreen(props) {
+const WelcomeScreen = () => {
   return (
     <ImageBackground
       style={styles.background}
