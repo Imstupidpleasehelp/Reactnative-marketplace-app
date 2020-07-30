@@ -21,7 +21,7 @@ import {
 } from "@react-native-community/hooks";  use this to support orientations */
 import WelcomeScreen from "./App/screens/welcomeScreen";
 import ViewImageScreen from "./App/screens/viewimage";
-import AppButton from "./App/components/appbutton";
+import CardCom from './App/components/card'
 //use safearea to make sure it's not covered
 
 export default function App() {
@@ -31,7 +31,8 @@ export default function App() {
   } = useDeviceOrientation(); /* change with orientation  <Text style={{color: landscape ? 'green' : 'black',}}>Meme dictionary</Text> */
   return (
     <SafeAreaView style={styles.container}>
-      <WelcomeScreen />
+    <WelcomeScreen /> 
+      <CardCom />
       
     </SafeAreaView>
   );
@@ -44,7 +45,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
-  
+  big: {
+    fontSize: 48
+  }
   
 });
 

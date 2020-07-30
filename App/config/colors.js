@@ -1,5 +1,5 @@
 export default {
     primary: 'tomato',
-    secondary: 'dodgerblue'
+    secondary: '#F26B7F'
 }
 /* how to set app-wide colors */ 
