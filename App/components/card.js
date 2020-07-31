@@ -8,11 +8,28 @@ import {
   Button,
   Card,
 } from "react-native";
-const CardCom = () => {
+import colors from '../config/colors'
+function CardCom({title, subtitle, image}) {
   return (
-    <View>
-     <Text>aweaewe</Text>
+    <View style={styles.card}>
+     <Image style={styles.cardImage} source={(image)} />
+     <Text stlye={styles.carDesc}>{title}</Text>
+     <Text stlye={styles.carSubDesc}>{subtitle}</Text> 
     </View>
   );
 }
 export default CardCom;
+
+const styles = StyleSheet.create({
+  card: {
+    width: '80%',
+    height: '25%',
+    borderRadius: 25,
+    backgroundColor: colors.white,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  cardImage: {
+
+  }
+})

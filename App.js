@@ -32,9 +32,8 @@ const App = () => {
   } = useDeviceOrientation(); /* change with orientation  <Text style={{color: landscape ? 'green' : 'black',}}>Meme dictionary</Text> */
   return (
     <SafeAreaView style={styles.container}>
-    <WelcomeScreen /> 
-    <ViewImageScreen />
-    <CardCom />
+    
+    <CardCom title='ass' subtitle='subtitle' image={require('./App/assets/hotdog.jpg')} />
     </SafeAreaView>
   );
 }
