@@ -33,7 +33,7 @@ const App = () => {
   return (
     <SafeAreaView style={styles.container}>
     
-    <CardCom title='ass' subtitle='subtitle' image={require('./App/assets/download.png')} />
+    <CardCom title='Beezechurger' subtitle='Testing testing testing aaa' price={40} image={require('./App/assets/download.png')} />
     </SafeAreaView>
   );
 }
