@@ -23,7 +23,7 @@ export default CardCom;
 const styles = StyleSheet.create({
   card: {
     backgroundColor: colors.white,
-    marginBottom: 1,
+    
     padding: 15,
     borderRadius: 25,
     margin: 10,
