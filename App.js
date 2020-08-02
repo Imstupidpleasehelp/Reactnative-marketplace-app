@@ -33,8 +33,7 @@ const App = () => {
   } = useDeviceOrientation(); /* change with orientation  <Text style={{color: landscape ? 'green' : 'black',}}>Meme dictionary</Text> */
   return (
     <SafeAreaView style={styles.container}>
-    
-    <ListingScreen />
+    <ViewImageScreen />
     </SafeAreaView>
   );
 }
