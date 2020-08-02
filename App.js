@@ -23,6 +23,7 @@ import {
 import WelcomeScreen from "./App/screens/welcomeScreen";
 import ViewImageScreen from "./App/screens/viewimage";
 import CardCom from './App/components/card'
+import ListingScreen from "./App/screens/listingScreen";
 //use safearea to make sure it's not covered
 
 const App = () => {
@@ -33,7 +34,7 @@ const App = () => {
   return (
     <SafeAreaView style={styles.container}>
     
-    <CardCom title='Beezechurger' subtitle='Testing testing testing aaa' price={40} image={require('./App/assets/download.png')} />
+    <ListingScreen />
     </SafeAreaView>
   );
 }
