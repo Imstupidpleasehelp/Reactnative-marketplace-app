@@ -12,9 +12,13 @@ const ViewImageScreen = () =>  {
             <View style={styles.closeButton}>
                 <MaterialCommunityIcons name="arrow-left" color="black" size={50} />
             </View>
+            <View style={styles.cart}>
+<Text style={styles.order}>1</Text><MaterialCommunityIcons name="cart" color="white" size={50} />
+            </View>
             <View style={styles.orderButton}>
                 <MaterialCommunityIcons name="food-fork-drink" color="white" size={50} /><Text style={styles.order}>Order</Text>
             </View>
+            <Text style={styles.title}>A burger I guess</Text>
 <Image resizeMode='contain' style={styles.Image} source={require('../assets/doge.jpg')} />
 <AppButton />
 </View>
@@ -26,6 +30,17 @@ const styles = StyleSheet.create({
 backgroundColor: colors.secondary,
 flex: 1,
 paddingTop: 50
+    },
+    cart: {
+top: 0,
+alignItems: 'center'
+    },
+    title: {
+fontSize: 35,
+paddingBottom: -35,
+alignItems: 'center',
+marginLeft: 'auto',
+marginRight: 'auto'
     },
     topbar: {
 width: '100%',
@@ -40,7 +55,7 @@ top: 0
     },
     order: {
 color: 'white',
-fontSize: 18,
+fontSize: 24,
 alignItems: 'center',
 marginTop: -12
     },

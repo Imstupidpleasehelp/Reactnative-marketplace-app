@@ -27,6 +27,7 @@ import ListingScreen from "./App/screens/listingScreen";
 //use safearea to make sure it's not covered
 
 const App = () => {
+  
   //shake the phone for dev menu
   /* const {
     landscape,
