@@ -10,7 +10,7 @@ const ViewImageScreen = () =>  {
         <View style={styles.Container}>
            
             <View style={styles.closeButton}>
-                <MaterialCommunityIcons name="arrow-left" color="black" size={50} />
+                <MaterialCommunityIcons name="arrow-left" color="white" size={50} />
             </View>
             <View style={styles.cart}>
 <Text style={styles.order}>1</Text><MaterialCommunityIcons name="cart" color="white" size={50} />
@@ -69,7 +69,7 @@ marginTop: -12
     Image: {
        width: 400,
        height: 550,
-       marginTop: 55,
+       marginTop: 15,
 marginBottom: 55
     }
 })

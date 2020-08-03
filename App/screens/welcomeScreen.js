@@ -9,6 +9,7 @@ import {
 } from "react-native";
 import AppButton from "../components/appbutton";
 
+
 const WelcomeScreen = () => {
   return (
     <ImageBackground
@@ -20,8 +21,8 @@ const WelcomeScreen = () => {
         <Text style={styles.big}>Hungry?</Text>
       </View>
       <View style={styles.buttonbox}>
-        <AppButton title={"login"} />
-        <AppButton title={"Register"} color="secondary" />
+        <AppButton title={"Browse food"} />
+        <AppButton title={"Search"} color="secondary" />
       </View>
     </ImageBackground>
   );
