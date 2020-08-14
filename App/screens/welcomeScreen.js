@@ -8,9 +8,10 @@ import {
   Button,
 } from "react-native";
 import AppButton from "../components/appbutton";
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-
-const WelcomeScreen = () => {
+const WelcomeScreen = ({navigation}) => {
   return (
     <ImageBackground
       style={styles.background}
@@ -23,6 +24,10 @@ const WelcomeScreen = () => {
       <View style={styles.buttonbox}>
         <AppButton title={"Browse food"} />
         <AppButton title={"Search"} color="secondary" />
+        <Button
+        title="Go to Details"
+        onPress={() => navigation.navigate('listings')}
+      />
       </View>
     </ImageBackground>
   );
