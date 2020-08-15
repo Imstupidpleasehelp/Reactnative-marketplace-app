@@ -5,11 +5,8 @@ import {
   View,
   ImageBackground,
   Image,
-  Button,
 } from "react-native";
 import AppButton from "../components/appbutton";
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
 
 const WelcomeScreen = ({navigation}) => {
   return (
