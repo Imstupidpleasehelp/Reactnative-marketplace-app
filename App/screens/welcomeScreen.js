@@ -22,12 +22,9 @@ const WelcomeScreen = ({navigation}) => {
         <Text style={styles.big}>Hungry?</Text>
       </View>
       <View style={styles.buttonbox}>
-        <AppButton title={"Browse food"} />
+        <AppButton title={"Browse food"} onPress={() => navigation.navigate('listings')} />
         <AppButton title={"Search"} color="secondary" />
-        <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate('listings')}
-      />
+        
       </View>
     </ImageBackground>
   );
