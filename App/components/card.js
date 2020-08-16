@@ -16,6 +16,7 @@ function CardCom({title, subtitle, image, price}) {
      <Text style={styles.title}>{title}</Text>
      <Text style={styles.subtitle}>{subtitle}</Text> 
      <Text style={styles.price}>${price}</Text>
+     <Button title="Add to Cart" />
     </View>
   );
 }
