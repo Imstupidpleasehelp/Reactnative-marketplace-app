@@ -30,27 +30,30 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   cardImage: {
-   width: 300,
-   height: 250,
+   width: '100%',
+   height: '35%',
     borderTopLeftRadius: 25,
     borderTopRightRadius: 25,
   },
   subtitle: {
     paddingTop: 5,
     paddingHorizontal: 5,
-    fontSize: 18
+    fontSize: 18,
+    textAlign: "center"
   },
   price: {
     color: colors.secondary,
     fontWeight: "bold",
     paddingHorizontal: 0,
     paddingTop: 15,
-   fontSize: 18
+   fontSize: 18,
+   
+   textAlign: "center"
   },
   title: {
     paddingTop: 5,
     paddingBottom: 5,
-   paddingHorizontal:65,
-   fontSize: 28
+   fontSize: 28,
+   textAlign: "center"
   },
 });

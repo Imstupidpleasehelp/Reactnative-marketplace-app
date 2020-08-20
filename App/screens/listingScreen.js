@@ -21,17 +21,33 @@ function ListingScreen(props) {
             image={require("../assets/doge.jpg")}
           />
         </TouchableOpacity>
-        <CardCom
-          title="aaa"
-          subtitle="wee"
-          price="10.99"
-          image={require("../assets/fries.jpg")}
-        />
-        <ListItem
-          title="Wendy's"
-          subtitle="Fast food"
-          image={require("../assets/doge.jpg")}
-        />
+        <TouchableOpacity onPress={() => navigation.navigate("viewimage")}>
+          <CardCom
+            title="aaa"
+            subtitle="wee"
+            price="10.99"
+            image={require("../assets/hotdog.jpg")}
+          />
+          <ListItem
+            title="Wendy's"
+            subtitle="Fast food"
+            image={require("../assets/doge.jpg")}
+          />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("viewimage")}>
+          <CardCom
+            title="aaa"
+            subtitle="wee"
+            price="10.99"
+            image={require("../assets/hotdog.jpg")}
+          />
+          <ListItem
+            title="Wendy's"
+            subtitle="Fast food"
+            image={require("../assets/doge.jpg")}
+          />
+        </TouchableOpacity>
+        
       </View>
     </ScrollView>
   );
@@ -40,6 +56,6 @@ export default ListingScreen;
 const styles = StyleSheet.create({
   listpage: {
     backgroundColor: colors.primary,
-    flex: 1,
+    height: '100%'
   },
 });

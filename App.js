@@ -27,6 +27,7 @@ import ListingScreen from "./App/screens/listingScreen";
 //use safearea to make sure it's not covered
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import Cartbar from "./App/components/cartbar";
 
 const App = () => {
   const Stack = createStackNavigator();
